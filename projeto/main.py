@@ -16,7 +16,7 @@ class Novo(QMainWindow, Ui_MainWindow):
         imagem, _ = QFileDialog.getOpenFileName(
             self.centralwidget,
             'Abrir imagem',
-            r'/home/luizotavio/Imagens/',
+            r'/home',
             options=QFileDialog.DontUseNativeDialog
         )
         self.inputAbrirArquivo.setText(imagem)
@@ -36,7 +36,7 @@ class Novo(QMainWindow, Ui_MainWindow):
         imagem, _ = QFileDialog.getSaveFileName(
             self.centralwidget,
             'Salvar imagem',
-            r'/home/luizotavio/Desktop/',
+            r'/home',
             options=QFileDialog.DontUseNativeDialog
         )
         self.nova_imagem.save(imagem, 'PNG')
